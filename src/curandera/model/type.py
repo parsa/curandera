@@ -1,0 +1,11 @@
+from enum import Enum
+
+# TODO: This is a CodeModel
+class Type(Enum):
+    EXECUTABLE = 'EXECUTABLE'
+    INTERFACE = 'INTERFACE_LIBRARY'
+    UTILITY = 'UTILIY'
+    STATIC = 'STATIC_LIBRARY'
+    MODULE = 'MODULE_LIBRARY'
+    SHARED = 'SHARED_LIBRARY'
+    OBJECT = 'OBJECT_LIBRARY'

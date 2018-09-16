@@ -1,5 +1,7 @@
 # Overview
 
+<!--![TRAVIS] ![APPVEYOR] ![CODECOV] -->
+
 Curandera is a python library that heals you from CMake's bullshit. It provides
 an API for extracting info on a given CMake project, while also permitting the
 ability to configure, generate, and build a project all in one command, or as
@@ -17,3 +19,9 @@ systems, and package managers. Curandera is a key component for extracting
 build information, and is a dependency of [brujeria]
 
 [brujeria]: https://github.com/slurps-mad-rips/brujeria
+
+
+### Notes
+
+Rename cmake module to models/model
+Move cmake.protocol to core.protocol
