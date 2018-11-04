@@ -1,3 +1,6 @@
+[build-system]
+requires = ['setuptools', 'wheel', 'poetry']
+
 [tool.poetry]
 name = "curandera"
 version = "0.1.0"
@@ -8,7 +11,25 @@ readme = "README.md"
 repository = "https://github.com/slurps-mad-rips/curandera"
 keywords = ["cmake", "ninja", "occult", "build-system"]
 packages = [ { include = "curandera", from = "src" } ]
-include = ["SUPPORT.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md"]
+include = [
+  "CODE_OF_CONDUCT.md",
+  "CONTRIBUTING.md",
+  "SUPPORT.md",
+  "tests/",
+  "docs/",
+]
+classifiers = [
+  "Intended Audience :: Developers",
+  "Operating System :: POSIX",
+  "Operating System :: POSIX :: BSD",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: Microsoft :: Windows",
+  "Topic :: Software Development :: Build Tools",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
 
 [tool.poetry.scripts]
 cura = 'curandera:__main__.main'
